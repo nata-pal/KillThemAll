@@ -7,7 +7,6 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
-import android.view.View;
 
 /**
  * Created by Natalia on 2015-05-25.
@@ -47,7 +46,7 @@ public class GameView extends SurfaceView {
                 }
             }
         });
-        bmp = BitmapFactory.decodeResource(getResources(), android.R.mipmap.sym_def_app_icon);
+        bmp = BitmapFactory.decodeResource(getResources(), R.drawable.bad1);
         sprite = new Sprite(this, bmp);
     }
 
