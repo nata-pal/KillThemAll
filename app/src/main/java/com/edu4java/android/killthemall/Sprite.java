@@ -39,6 +39,11 @@ public class Sprite {
         Random rnd = new Random(System.currentTimeMillis());
         xSpeed = rnd.nextInt(MAX_SPEED * 2) - MAX_SPEED;
         ySpeed = rnd.nextInt(MAX_SPEED * 2) - MAX_SPEED;
+
+        if(goodOne){
+            x = 100;
+            y = 100;
+        }
     }
 
     private void update() {
